@@ -53,7 +53,7 @@ export default function ResponsiveNavbar() {
                             <SheetContent side="left" className="w-[85%] sm:w-[420px] px-7 p-5">
                                 <div className="flex items-center justify-between mb-4">
                                     <div className="flex items-center gap-3">
-                                        <span className="font-medium">Shop.co</span>
+                                        <span className="font-bold">Shop.co</span>
                                     </div>
                                 </div>
                                 <ScrollArea className="h-[60vh]">
