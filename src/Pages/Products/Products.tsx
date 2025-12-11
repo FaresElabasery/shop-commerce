@@ -4,7 +4,7 @@ import PriceRange from "@/Components/PriceRanger/PriceRanger";
 import ProductCard from "@/Components/ProductCard/ProductCard";
 import { SkeletonCard } from "@/Components/SkeletonCard/SkeletonCard";
 import SortComponent from "@/Components/SortComponent/SortComponent";
-import { Separator } from "@/components/ui/separator";
+import { Separator } from "@/Components/ui/separator";
 import useFilter from "@/hooks/useFilter";
 import useProduct from "@/hooks/useProduct";
 import { type ICategorySlug, type IProduct } from "@/Interfaces/Products";
@@ -101,7 +101,7 @@ export default function Products() {
                         <Pagination className="absolute  -bottom-15 left-1/2 -translate-x-1/2 mb-15 md:mb-8" >
                             <PaginationContent>
                                 <PaginationItem>
-                                    <PaginationPrevious className="cursor-pointer" onClick={() => setPage((old) => Math.max(old - 1, 0))} />
+                                    <PaginationPrevious size="default" className="cursor-pointer" onClick={() => setPage((old) => Math.max(old - 1, 0))} />
                                 </PaginationItem>
                                 {page > 0 &&
                                     <>
@@ -125,7 +125,7 @@ export default function Products() {
                                     <PaginationEllipsis />
                                 </PaginationItem>
                                 <PaginationItem onClick={() => setPage((old) => old + 1)}>
-                                    <PaginationNext className="cursor-pointer" />
+                                    <PaginationNext size="default" className="cursor-pointer" />
                                 </PaginationItem>
                             </PaginationContent>
                         </Pagination>
