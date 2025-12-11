@@ -1,6 +1,6 @@
 
-import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
+import { Button } from '../ui/button';
 export default function HeroSection() {
     return (
         <div className='bg-bg-hero pt-10 sm:pt-2 '>

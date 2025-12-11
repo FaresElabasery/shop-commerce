@@ -1,6 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@radix-ui/react-accordion'
 import { ChevronDown } from 'lucide-react'
-import { useRef } from 'react'
 
 type AccordionComponentProps = {
     title: string,

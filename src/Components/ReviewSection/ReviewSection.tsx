@@ -1,5 +1,4 @@
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
-import HomeTilte from "../HomeTitle/HomeTilte";
 import ReviewSlider from "../ReviewSlider/ReviewSlider";
 
 export default function ReviewSection() {

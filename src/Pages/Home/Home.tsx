@@ -1,10 +1,9 @@
-import HeroSection from "@/Components/HeroSection/HeroSection";
-import BrandsHero from './../../Components/BrandsHero/BrandsHero';
-import HomeSection from "@/Components/HomeSection/HomeSection";
-import ReviewSection from './../../Components/ReviewSection/ReviewSection';
-import { Separator } from "@/components/ui/separator";
 import CategoriesSection from "@/Components/Footer/CategoriesSection/CategoriesSection";
-import useProduct from "@/hooks/useProduct";
+import HeroSection from "@/Components/HeroSection/HeroSection";
+import HomeSection from "@/Components/HomeSection/HomeSection";
+import { Separator } from "../../Components/ui/separator";
+import BrandsHero from './../../Components/BrandsHero/BrandsHero';
+import ReviewSection from './../../Components/ReviewSection/ReviewSection';
 
 
 export default function Home() {

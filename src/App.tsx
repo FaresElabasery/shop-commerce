@@ -38,7 +38,6 @@ function App() {
   return (
     <>
       <QueryClientProvider client={queryClient}>
-
         <RouterProvider router={routes} />
       </QueryClientProvider>
     </>

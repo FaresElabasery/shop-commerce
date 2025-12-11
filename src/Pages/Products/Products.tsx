@@ -5,10 +5,13 @@ import ProductCard from "@/Components/ProductCard/ProductCard";
 import { SkeletonCard } from "@/Components/SkeletonCard/SkeletonCard";
 import SortComponent from "@/Components/SortComponent/SortComponent";
 import { Separator } from "@/components/ui/separator";
+import useFilter from "@/hooks/useFilter";
+import useProduct from "@/hooks/useProduct";
+import { type ICategorySlug, type IProduct } from "@/Interfaces/Products";
+import { fetchProducts } from "@/Services/Product";
 import { QueryClient } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
-import filter from '/filter.svg';
-
+import { Link } from "react-router-dom";
 import {
     Pagination,
     PaginationContent,
@@ -16,12 +19,8 @@ import {
     PaginationItem,
     PaginationNext,
     PaginationPrevious,
-} from "@/components/ui/pagination";
-import useFilter from "@/hooks/useFilter";
-import useProduct from "@/hooks/useProduct";
-import { type ICategorySlug, type IProduct } from "@/Interfaces/Products";
-import { fetchProducts } from "@/Services/Product";
-import { Link } from "react-router-dom";
+} from "../../Components/ui/pagination";
+import filter from '/filter.svg';
 
 
 const queryClient = new QueryClient()
