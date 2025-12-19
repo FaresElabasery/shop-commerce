@@ -1,7 +1,7 @@
 
-import Slider from './../Slider/Slider';
-import { Button } from '@/components/ui/button';
+import { Button } from '../ui/button';
 import HomeTitle from './../HomeTitle/HomeTilte';
+import Slider from './../Slider/Slider';
 
 export default function HomeSection({ title }: { title: string }) {
     return (

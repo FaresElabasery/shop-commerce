@@ -7,11 +7,11 @@ import 'swiper/css/free-mode';
 
 // import required modules
 import useProduct from '@/hooks/useProduct';
+import type { IProduct } from '@/Interfaces/Products';
 import { FreeMode } from 'swiper/modules';
 import ProductCard from './../ProductCard/ProductCard';
-import type { IProduct } from '@/Interfaces/Products';
 export default function Slider() {
-    const { isPending, data } = useProduct({ page: 0, selectedCategory: null })
+    const { data } = useProduct({ page: 0, selectedCategory: null })
     console.log(data);
 
     return (

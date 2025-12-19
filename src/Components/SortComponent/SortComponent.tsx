@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { TbFilterUp } from "react-icons/tb";
 
 type SortComponentProps = {
